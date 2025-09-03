@@ -3,8 +3,23 @@
 5th Year Computer Science – Class 3: Input Statements & Debugging
 ---------------------------------------------------------------
 
+Learning Intentions:
+From this lesson the students will be able to:
+- Read and understand some basic code
+- Modify the code to do other tasks
+- Debug syntax errors
+- Debug logical errors
+- Write their own program in Python
+- Use key operators in programming
+- Solve a numerical task and program their solution
 
+Learning Outcomes:
+LO 1.1 Students should be able to describe a systematic process for solving problems and making decisions
+LO 1.22 Students should be able to read, write, test, and modify computer programs
+LO 2.20 Students should be able to identify and fix/debug warnings and errors in code and modify as required
+"""
 
+"""
 ---------------------------------------------------------------
 Input Statements
 ---------------------------------------------------------------
@@ -24,8 +39,8 @@ height = float(input("Enter your height in metres: "))
 print("Your height is", height, "metres.")
 
 # Task 1:
-# Ask the user to input their favourite colour and print a sentence with it
-# Ask the user to input their age (convert to int) and print what their age will be in 5 years
+# - Ask the user to input their favourite colour and print a sentence with it
+# - Ask the user to input their age (convert to int) and print what their age will be in 5 years
 
 
 """
@@ -35,8 +50,8 @@ Debugging Practice – Broken Programs
 Each of these small programs has one or more errors. 
 Copy the code, try to run it, read the error messages, and fix the problems.
 """
-#Debugging Task
-#  A 
+
+# A 
 # age = input("Enter your age: "  
 # print("Next year you will be", age + 1)  
 
@@ -75,6 +90,48 @@ Copy the code, try to run it, read the error messages, and fix the problems.
 
 """
 ---------------------------------------------------------------
+Key Operators (Arithmetic)
+---------------------------------------------------------------
+"""
+
+# Predict the answers and the data types before running:
+ans_1 = 4 + 5 / 1 + 2
+print(ans_1)
+
+ans_2 = (4 + 5) / (1 + 2)
+print(ans_2)
+
+x = 20
+y = 8
+
+ans_3 = x // y
+print(ans_3)
+
+ans_4 = x / y
+print(ans_4)
+
+ans_5 = int(x / y)
+print(ans_5)
+
+
+"""
+---------------------------------------------------------------
+Generating Random Numbers
+---------------------------------------------------------------
+- First we need to import the random module using "import".
+"""
+
+import random
+num1=random.randint(1, 10)  # generates a random integer between 1 and 10
+print(num1)
+
+#Example: Random multiplication program
+user_number=int(input("Enter a number between 1 and 100"))
+random_number=random.randint(1, 100)
+multiplied_number=user_number*random_number
+print(user_number, "multiplied by", random_number, "is: ",multiplied_number)
+"""
+---------------------------------------------------------------
 Compiling Several Lines of Code
 ---------------------------------------------------------------
 - A program often needs multiple steps: 
@@ -100,7 +157,7 @@ print("The area of the rectangle is", area)
 ---------------------------------------------------------------
 Consolidation Tasks
 ---------------------------------------------------------------
-Now use everything from Classes 1, 2, and 3 (variables, input, conversion, arithmetic, order of operations, rounding).
+Use all of the skills you have learned so far.
 """
 
 # Task 3:
@@ -112,11 +169,24 @@ Now use everything from Classes 1, 2, and 3 (variables, input, conversion, arith
 # - Calculate the volume using (4/3) * π * r^3 (use π = 3.14159)
 # - Print the result rounded to 2 decimal places
 
-# Task 5 (Challenge):
-# - Ask the user how much money they have saved
+# Task 5:
+# - Ask the user how much money they have saved (float)
 # - Increase it by 5% interest (use x *= 1.05)
 # - Subtract 50 for expenses
 # - Print the final balance rounded to 2 decimal places
+
+# Task 6:
+# - Generate two random integers between 1 and 10
+# - Print them out
+# - Multiply them together and print the result
+# - Divide the first number by the second and round to 2 decimal places
+
+# Task 7:
+# - Ask the user for 3 test scores (floats)
+# - Calculate the average
+# - Round the result to 1 decimal place
+# - Print the average score
+
 
 
 """
@@ -127,6 +197,7 @@ Recap
   * input() for user input (always returns a string)
   * Converting input into int or float for calculations
   * Debugging broken code (syntax and logic errors)
+  * Key arithmetic operators and random numbers
   * Compiling multi-line programs with input, processing, and output
-- We then used all skills together in practical problems.
+- We finished with a set of tasks that combined all skills learned so far.
 """
