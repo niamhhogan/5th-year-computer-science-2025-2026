@@ -57,7 +57,7 @@ while True:
         break
 
 #part (v): for loop to calculate the total price of the drinks
-for i in range(1, drinks + 1):
+for i in range(drinks):
     total_cost += 2.50
 
 #part (vi): Ask if the customer wants a snack
