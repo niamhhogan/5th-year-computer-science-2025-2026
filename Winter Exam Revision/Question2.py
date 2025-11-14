@@ -46,12 +46,15 @@ name = input("Please enter your name: ").strip().capitalize()
 print(f"Order taken by: {name}")
 
 #part (iii): Ask how many drinks the customer would like to buy
-drinks = int(input("How many drinks would the customer like to buy? "))
 
 #part (iv): while loop to ensure number is greater than 0
-while drinks <= 0:
-    print("Number must be greater than 0.")
+while True:
     drinks = int(input("How many drinks would the customer like to buy? "))
+    if drinks <0:
+        print("Number must be greater than 0.")
+        drinks = int(input("How many drinks would the customer like to buy? "))
+    else:
+        break
 
 #part (v): for loop to calculate the total price of the drinks
 for i in range(1, drinks + 1):
